@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--validate acount-->
+<script>
+    function validateAcount(acount) {
+        let regexp = /^[_a-z0-9]{6,}$/;
+        if (regexp.test(acount)){
+            return true;
+        }
+        return false;
+    }
+    // test chuoi hop le, tra ve true
+    let testacount = "123abc_";
+    document.write(validateAcount(testacount )+ "<br>");
+    // test chuoi khong hop le, tra ve false
+    testacount = "12345";
+    document.write(validateAcount(testacount));
+</script>
+</body>
+</html>
